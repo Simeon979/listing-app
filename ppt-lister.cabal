@@ -20,12 +20,14 @@ extra-source-files:  CHANGELOG.md
 executable ppt-lister
   main-is:             Main.hs
   other-modules:       Domain.Listing
+                     , Domain.Filter
                      , Adapter.InMemory.Listing
 
   default-extensions:  NoImplicitPrelude
                      , OverloadedStrings
                      , ConstraintKinds
                      , FlexibleContexts
+                     , GeneralizedNewtypeDeriving
 
   build-depends:       base ^>=4.11.1.0
                      , classy-prelude
